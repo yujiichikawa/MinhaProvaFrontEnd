@@ -1,0 +1,23 @@
+<form>
+    <div>
+        <label for="id">Id</label>
+        <input type="text" name="id" [(ngModel)]="id">
+    </div>
+    <div>
+        <label for="nome">Nome</label>
+        <input type="text"  name="nome" [(ngModel)]="nome">
+    </div>
+    <div>
+        <label for="serie">Serie</label>
+        <input type="text" name="serie" [(ngModel)]="serie">
+    </div>
+    <div>
+        <label for="valor">Valor</label>
+        <input type="text" name="valor" [(ngModel)]="valor">
+    </div>
+    <div>
+        <button type="submit" (click)="cadastrar()">Cadastrar</button>
+    </div>
+</form>
+
+

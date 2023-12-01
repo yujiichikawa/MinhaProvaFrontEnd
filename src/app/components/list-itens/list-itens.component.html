@@ -1,0 +1,9 @@
+
+<h1>O que você deseja fazer?:</h1>
+<Button (click) = 'add()'>Inserir</Button>
+<Button (click) = 'delete()'>Deletar</Button>
+<app-adicionarproduto *ngIf="cadastro" [listItens]="produtos"></app-adicionarproduto>
+<app-deletarproduto *ngIf="deletar" [listItens]="produtos"></app-deletarproduto>
+<app-list [listItens]="produtos"></app-list>
+<router-outlet></router-outlet>
+

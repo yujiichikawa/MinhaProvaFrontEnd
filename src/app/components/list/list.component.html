@@ -1,0 +1,10 @@
+
+<ul>
+  <li *ngFor="let item of listItens">
+      <input type="checkbox" (click)="check()">
+      <p>Id: {{item.id}} </p>
+      <p>Nome: {{item.nome}}</p>
+      <p>Serie: {{item.serie}}</p>
+      <p>Valor: {{item.valor}}</p>
+  </li>
+</ul>

@@ -1,0 +1,15 @@
+<form>
+  <div>
+    <label for="email">E-mail</label>
+    <input type="text" name="email">
+  </div>
+  <div>
+    <label for="senha">Senha</label>
+    <input type="text" name="senha">
+  </div>
+  <div>
+    <Button (click) = 'login()'>Fazer Login</Button>
+  </div>
+</form>
+
+<app-area-logada *ngIf="logado" [emailUser]="email"></app-area-logada>
